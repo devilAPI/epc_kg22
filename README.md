@@ -40,7 +40,7 @@ python3 epc_keygen.py ABCDEF123456 -t 8CD -y 2003 -d 2003-06-15
 The key generation pipeline:
 
 1. Parse the LanID — extract hex characters from position 4 onward, convert to a 16-bit value
-2. Prepare an 80-byte EPCKey buffer from the selected disc type (see `epc-disks.ini`)
+2. Prepare an 80-byte EPCKey buffer from the selected disc type
 3. Pack a fixed structure: version, type, year, day count, LanID value, EPCKey length, and a checksum
 4. Encode all fields as LSB-first binary strings (224 bits total)
 5. XOR with a repeating 74-character mask baked into the original binary
