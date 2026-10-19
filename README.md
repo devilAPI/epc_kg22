@@ -1,6 +1,6 @@
 # epc_kg22 keygen
 
-Reverse-engineered reimplementation of the `epc_kg22.exe` key generator (2002) in Python.
+Reverse-engineered reimplementation of the `epc_kg22.exe` key generator in Python.
 
 The original is a 32-bit Windows MFC application, UPX-packed (v1.90, NRV method 9).
 This project reconstructs the key generation algorithm from disassembly of the unpacked binary.
